@@ -1,19 +1,18 @@
 {
-  "name": "ts-utils",
+  "name": "@yeahzee/ts-utils",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "build/index.js",
-  "module": "build/index.mjs",
-  "types": "build/index.d.ts",
-  "files": [
-    "build"
-  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
     "test": "vitest run",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "prepublishOnly": "pnpm test && pnpm build"
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
+    "publish": "npm publish --access public",
+    "prepublishOnly": "pnpm test && pnpm build && pnpm publish"
   },
   "keywords": [],
   "author": "",
