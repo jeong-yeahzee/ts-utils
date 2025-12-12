@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
     "test": "vitest run",
-    "build": "tsup src/index.ts --format esm,cjs --dts-resolve --minify",
+    "build": "tsup src/index.ts --format esm,cjs --dts-resolve",
     "prepublishOnly": "pnpm test && pnpm build"
   },
   "devDependencies": {
