@@ -5,15 +5,14 @@
     "access": "public"
   },
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
+    "import": "./index.js",
+    "require": "./index.cjs"
   },
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
