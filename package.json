@@ -13,14 +13,14 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
     "test": "vitest run",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
     "prepublishOnly": "pnpm test && pnpm build"
   },
   "devDependencies": {
