@@ -5,7 +5,8 @@
     "access": "public"
   },
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -18,7 +19,7 @@
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
     "test": "vitest run",
-    "build": "tsup src/index.ts --format esm,cjs --dts-resolve",
+    "build": "tsup src --format esm,cjs --dts",
     "prepublishOnly": "pnpm test && pnpm build"
   },
   "devDependencies": {
