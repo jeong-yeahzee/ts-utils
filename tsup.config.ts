@@ -1,11 +1,10 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
-  format: ["esm", "cjs"],
-  dts: {
-    entry: "src/index.ts"
-  },
-  minify: true,
+  entry: ["src/**/*.ts"], // src 전체
+  format: ["cjs", "esm"],
+  dts: true,
+  splitting: true,
+  outDir: "dist",
   clean: true
 });
