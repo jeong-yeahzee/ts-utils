@@ -6,13 +6,14 @@
   },
   "type": "module",
   "main": "./index.js",
-  "typings": "./index.d.ts",
+  "types": "./index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     "import": "./index.js",
-    "require": "./index.cjs"
+    "require": "./index.cjs",
+    "types": "./index.d.ts"
   },
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts",
