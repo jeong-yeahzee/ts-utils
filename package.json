@@ -1,11 +1,13 @@
 {
   "name": "@yeahzee/ts-utils",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "publishConfig": {
     "access": "public"
   },
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
