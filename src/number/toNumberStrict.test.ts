@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { toNumberStrict } from "../../src";
+import { toNumberStrict } from "..";
 
 describe("toNumberStrict", () => {
   describe("숫자 타입 입력", () => {
