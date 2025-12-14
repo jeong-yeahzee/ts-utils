@@ -25,6 +25,7 @@
     "prepublishOnly": "pnpm test && pnpm build"
   },
   "devDependencies": {
+    "prettier": "^3.7.4",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
     "vitest": "^4.0.15"
